@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:project06/applicant_home.dart';
+import 'package:project07/view/login/login_view.dart';
+void main() {
+  runApp(MyApp());
+}
 
-void main() => runApp(MyApp ());
-
-class MyApp  extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ApplicantHomeScreen(),
-
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: LoginPage(),
+      
     );
   }
-}  
+}
